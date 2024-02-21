@@ -20,19 +20,19 @@
       </header>
       <form action="#" method="post" class="form">
         <div class="form-group">
-          <label for="nome">Aniversário:</label>
+          <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" required />
         </div>
         <div class="form-group">
-          <label for="telefone">Usuário:</label>
+          <label for="telefone">telefone:</label>
           <input type="tel" id="telefone" name="telefone" required />
         </div>
         <div class="form-group">
-          <label for="email">Senha:</label>
+          <label for="email">email:</label>
           <input type="email" id="email" name="email" required />
         </div>
         <div class="form-group">
-          <label for="descricao">Gênero(opicional):</label>
+          <label for="descricao">descricao:</label>
           <textarea
             id="descricao"
             name="descricao"
@@ -67,7 +67,7 @@
 
         try {
           // Faz uma requisição para a sua API
-          await fetch("INSIRA O LINK DA SUA API AQUI", {
+          await fetch("https://meuprimeiroapi.onrender.com/formulario", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
