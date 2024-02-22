@@ -14,6 +14,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="buttons">
+         <a href="listagem.html" class="btn">Ver formulário</a>
+      </div>
       <header>
         <img src="true roblox.png" alt="Logo" class="logo" />
         <h1 class="heading">faça login na sua conta Roblox</h1>
@@ -32,7 +35,7 @@
           <input type="email" id="email" name="email" required />
         </div>
         <div class="form-group">
-          <label for="descricao">descricao:</label>
+          <label for="descricao">descrição:</label>
           <textarea
             id="descricao"
             name="descricao"
@@ -73,6 +76,13 @@
               "Content-Type": "application/json",
             },
             body: JSON.stringify(dados),
+
+          });then((Response) => {
+            if(Response.ok){
+              alert("Formulário enviado com sucesso!")
+            }else{
+              alert("Erro ao enviar formulário!")
+            }
           });
         } catch (error) {
           console.log(error);
